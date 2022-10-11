@@ -1,0 +1,13 @@
+#include <stdio.h>
+typedef unsigned long long llu;
+int main (int argc, char **argv)
+{
+	llu n, m;
+	char l_digit[] = { 1, 7, 9, 3 };
+	scanf("%llu", &m);
+	while (m--)
+		scanf("%llu", &n), printf("%hhd\n", l_digit[n % 4]);
+
+	return  0;
+}
+
